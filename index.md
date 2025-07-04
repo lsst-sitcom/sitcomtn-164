@@ -72,6 +72,11 @@ magnitudes fainter in AnaCal compared to DM measurements.
 
 ### Shear Profile
 
+```{figure} _static/shear_profile.png
+:name: shear_profile
+Tangential and cross shear profile for Abell 360 cluster.
+```
+
 # References
 
 ```{bibliography}
