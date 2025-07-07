@@ -24,3 +24,9 @@ orcid = "https://orcid.org/0000-0003-2880-5102"
 name = "Brookhaven National Laboratory"
 internal_id = "BNL"
 address = "Upton, NY 11973, USA"
+
+[[technote.authors]]
+name.given = "Prakruth"
+name.family = "Adari"
+internal_id = "adarip"
+orcid = "https://orcid.org/0000-0001-9431-3806"
