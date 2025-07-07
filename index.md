@@ -20,11 +20,11 @@ capabilities for weak lensing analyses of galaxy clusters.
 This technote is one part of a series studying Abell 360 in order to both
 stress test the commissioning camera and demonstrate the technical capabilities
 of the Vera Rubin Observatory. We study the quality of the PSF modeling and
-impact it can have on cluster WL in {cite}`SITCOMTN-161`, implementation of
+impact it can have on cluster WL in {cite:t}`SITCOMTN-161`, implementation of
 cell-based coadds and subsequent use for Metadetect {cite:p}`metaDet_LSST2023`
-in {cite}`SITCOMTN-162`, photometric calibration in _insert here_, use of
+in {cite:t}`SITCOMTN-162`, photometric calibration in _insert here_, use of
 Anacal {cite:p}`Anacal_Li2025` to produce a cluster shear profile in
-{cite}`SITCOMTN-164`, and background subtraction in this field and Fornax in
+{cite:t}`SITCOMTN-164`, and background subtraction in this field and Fornax in
 _insert here_.
 
 ## AnaCal Shear Estimation
@@ -36,14 +36,14 @@ from astronomical images. Instead of relying on numerical shearing or image
 simulations, the method starts from first principles by analytically computing
 how each pixel value in an image responds to an applied shear after
 deconvolution and reconvolution with a Gaussian smoothing kernel
-{cite}`Anacal_Li2023`. This pixel-level shear response captures the fundamental
+{cite:p}`Anacal_Li2023`. This pixel-level shear response captures the fundamental
 transformation properties of the image under lensing distortions.
 
 Building on this, the framework then develops a way to propagate pixel-level
 shear responses to derived quantities---such as flux, moments, ellipticities,
 detection or selection---that are calculated as functions of the pixels. To do
 this systematically, the method introduces a mathematical formalism based on
-quintuple numbers {cite}`Anacal_Li2026`, a commutative ring to track shear
+quintuple numbers {cite:p}`Anacal_Li2026`, a commutative ring to track shear
 response in the image processing. Each quintuple encodes not just the value of
 a quantity, but also its first-order derivatives with respect to shear,
 enabling propagation of shear responses through arbitrary differentiable
@@ -54,7 +54,7 @@ The idea is to construct a "renoised" image by adding a pure noise
 field---drawn from the same image noise distribution as the original image but
 rotated by 90 degrees. This rotation symmetrizes the noise contribution under
 shear distortion and allows the authors to analytically derive the correction
-term for noise bias in the shear response {cite}`Anacal_Li2025`. The resulting
+term for noise bias in the shear response {cite:p}`Anacal_Li2025`. The resulting
 correction is not only accurate but avoids the need for calibration of noise
 bias with external simulations, maintaining the fully analytical nature of the
 shear response pipeline.
@@ -67,7 +67,7 @@ shear response pipeline.
 Coadd $i$-band image of tract 10463, patch 61, before (left) and after (right)
 masking the bright stars.
 ```
-To derive the pixel-level shear response following {cite}`Anacal_Li2023`, each
+To derive the pixel-level shear response following {cite:t}`Anacal_Li2023`, each
 coadd image is first deconvolved by its native PSF and then reconvolved with a
 Gaussian PSF using the Fast Fourier Transform (FFT). The target PSF size is set
 to be larger than the native PSF to ensure the image processing pipeline is
@@ -142,7 +142,7 @@ well-resolved galaxies
 :name: sel_table
 | Column |
 | ------ |
-| mag $\leq$ 23.5 |
+| mag $\leq$ 24 |
 | $M_2$ $\geq$ 0.05 |
 ```
 The shear-dependent biases caused by the selection is estimated and corrected
