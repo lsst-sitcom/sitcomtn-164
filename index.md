@@ -1,4 +1,4 @@
-# AnaCal Shear Profile or Abell 360 in ComCam Data
+# AnaCal Shear Profile of Abell 360 in ComCam Data
 
 ```{abstract}
 This technote presents the measurement of the shear profile for the Abell 360

@@ -1,7 +1,7 @@
 [![Website](https://img.shields.io/badge/sitcomtn--164-lsst.io-brightgreen.svg)](https://sitcomtn-164.lsst.io)
 [![CI](https://github.com/lsst-sitcom/sitcomtn-164/actions/workflows/ci.yaml/badge.svg)](https://github.com/lsst-sitcom/sitcomtn-164/actions/workflows/ci.yaml)
 
-# AnaCal Shear Profile or Abell 360 in ComCam Data
+# AnaCal Shear Profile of Abell 360 in ComCam Data
 
 ## SITCOMTN-164
 
