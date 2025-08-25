@@ -9,6 +9,9 @@ organization.name = "Vera C. Rubin Observatory"
 organization.ror = "https://ror.org/048g3cy84"
 license.id = "CC-BY-4.0"
 
+[bibliography]
+files = ["_bibliography/references.bib"]
+
 [technote.status]
 state = "draft"
 
@@ -21,3 +24,34 @@ orcid = "https://orcid.org/0000-0003-2880-5102"
 name = "Brookhaven National Laboratory"
 internal_id = "BNL"
 address = "Upton, NY 11973, USA"
+
+[[technote.authors]]
+name.given = "Prakruth"
+name.family = "Adari"
+internal_id = "adarip"
+orcid = "https://orcid.org/0000-0001-9431-3806"
+[[technote.authors.affiliations]]
+name = "Stony Brook University"
+internal_id = "StonyBrookU"
+address = "Stony Brook University, Stony Brook, NY 11794, USA"
+ror = "https://ror.org/05qghxh33"
+
+[[technote.authors]]
+internal_id = "lindena"
+orcid = "https://orcid.org/0000-0002-3881-7724"
+name = {given = "Anja", family = "von der Linden"}
+[[technote.authors.affiliations]]
+name = "Stony Brook University"
+internal_id = "StonyBrookU"
+address = "Stony Brook University, Stony Brook, NY 11794, USA"
+ror = "https://ror.org/05qghxh33"
+
+[[technote.authors]]
+internal_id = "mandelbaumr"
+orcid = "https://orcid.org/0000-0003-2271-1527"
+name = {given = "Rachel", family = "Mandelbaum"}
+[[technote.authors.affiliations]]
+name = "Carnegie Mellon University"
+internal_id = "CMU"
+address = "Carnegie Mellon University, Pittsburgh, PA 15213, USA"
+ror = "https://ror.org/05x2bcf33"

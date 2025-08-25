@@ -1,11 +1,18 @@
 [![Website](https://img.shields.io/badge/sitcomtn--164-lsst.io-brightgreen.svg)](https://sitcomtn-164.lsst.io)
 [![CI](https://github.com/lsst-sitcom/sitcomtn-164/actions/workflows/ci.yaml/badge.svg)](https://github.com/lsst-sitcom/sitcomtn-164/actions/workflows/ci.yaml)
 
-# AnaCal Shear Profile or Abell 360 in ComCam Data
+# AnaCal Shear Profile of Abell 360 in LSSTComCam Data Preview 1
 
 ## SITCOMTN-164
 
-This technote presents the measurement of the shear profile for the Abell 360 galaxy cluster using ComCam data processed with the AnaCal pipeline. We detail the procedures involved in bright star masking, source selection, and the estimation of tangential and cross shear around the cluster center. The resulting shear profiles provide key insights into the mass distribution of Abell 360 and demonstrate the capabilities of AnaCal in processing early LSST data.
+This technote presents the measurement of the weak-lensing shear profile for
+the Abell 360 galaxy cluster using LSSTComCam data processed with the AnaCal
+pipeline. We detail the procedures involved in bright-star masking, source
+selection, and the estimation of tangential and cross shear around the cluster
+center. The resulting shear profiles provide key insights into the mass
+distribution of Abell 360 and demonstrate the capabilities of AnaCal in
+processing early LSST data, with the tangential shear profile detected at
+$5\sigma$ significance.
 
 **Links:**
 
@@ -26,18 +33,22 @@ make init
 make html
 ```
 
-Repeat the `make html` command to rebuild the technote after making changes.
-If you need to delete any intermediate files for a clean build, run `make clean`.
+Repeat the `make html` command to rebuild the technote after making changes. If
+you need to delete any intermediate files for a clean build, run `make clean`.
 
 The built technote is located at `_build/html/index.html`.
 
 ## Publishing changes to the web
 
-This technote is published to https://sitcomtn-164.lsst.io whenever you push changes to the `main` branch on GitHub.
-When you push changes to a another branch, a preview of the technote is published to https://sitcomtn-164.lsst.io/v.
+This technote is published to https://sitcomtn-164.lsst.io whenever you push
+changes to the `main` branch on GitHub. When you push changes to a another
+branch, a preview of the technote is published to
+https://sitcomtn-164.lsst.io/v.
 
 ## Editing this technical note
 
-The main content of this technote is in `index.md` (a Markdown file parsed as [CommonMark/MyST](https://myst-parser.readthedocs.io/en/latest/index.html)).
-Metadata and configuration is in the `technote.toml` file.
-For guidance on creating content and information about specifying metadata and configuration, see the Documenteer documentation: https://documenteer.lsst.io/technotes.
+The main content of this technote is in `index.md` (a Markdown file parsed as
+[CommonMark/MyST](https://myst-parser.readthedocs.io/en/latest/index.html)).
+Metadata and configuration is in the `technote.toml` file. For guidance on
+creating content and information about specifying metadata and configuration,
+see the Documenteer documentation: https://documenteer.lsst.io/technotes.
