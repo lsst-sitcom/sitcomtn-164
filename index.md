@@ -51,7 +51,7 @@ a quantity, but also its first-order derivatives with respect to shear,
 enabling propagation of shear responses through arbitrary differentiable
 algebraic operations.
 
-To address noise bias, the method incorporates a "renoise" correction scheme.
+To address noise bias, the method incorporates a "renoising" correction scheme.
 The idea is to construct a "renoised" image by adding a pure noise
 field---drawn from the same image noise distribution as the original image but
 rotated by 90 degrees. This rotation symmetrizes the noise contribution under
