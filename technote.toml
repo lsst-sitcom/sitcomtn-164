@@ -13,7 +13,7 @@ license.id = "CC-BY-4.0"
 files = ["_bibliography/references.bib"]
 
 [technote.status]
-state = "draft"
+state = "stable"
 
 [[technote.authors]]
 name.given = "Xiangchong"

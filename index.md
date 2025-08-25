@@ -170,7 +170,7 @@ set. We use AnaCal fluxes for the selection.
 
 ```{figure} _static/rs_selection.png
 :name: rs_selection
-Color–magnitude diagrams of galaxies near the BCG, plotted with the AnaCal
+Color-magnitude diagrams of galaxies near the BCG, plotted with the AnaCal
 r-band magnitude on the x-axis and AnaCal colors on the y-axis. From left to
 right, we show *g-i*, *r-i*, and *g-r* colors, with the red-sequence overdensity
 clearly visible.
