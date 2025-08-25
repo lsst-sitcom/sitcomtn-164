@@ -30,3 +30,18 @@ name.given = "Prakruth"
 name.family = "Adari"
 internal_id = "adarip"
 orcid = "https://orcid.org/0000-0001-9431-3806"
+[[technote.authors.affiliations]]
+name = "Stony Brook University"
+internal_id = "StonyBrookU"
+address = "Stony Brook University, Stony Brook, NY 11794, USA"
+ror = "https://ror.org/05qghxh33"
+
+[[technote.authors]]
+internal_id = "lindena"
+orcid = "https://orcid.org/0000-0002-3881-7724"
+name = {given = "Anja", family = "von der Linden"}
+[[technote.authors.affiliations]]
+name = "Stony Brook University"
+internal_id = "StonyBrookU"
+address = "Stony Brook University, Stony Brook, NY 11794, USA"
+ror = "https://ror.org/05qghxh33"

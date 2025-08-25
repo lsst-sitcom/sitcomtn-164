@@ -1,4 +1,4 @@
-# AnaCal Shear Profile of Abell 360 in ComCam Data
+# AnaCal Shear Profile of Abell 360 in LSSTComCam Data Preview 1
 
 ```{abstract}
 This technote presents the measurement of the shear profile for the Abell 360
@@ -143,29 +143,42 @@ well-resolved galaxies
 :name: sel_table
 | Column |
 | ------ |
-| mag $\leq$ 24 |
+| g_mag $\leq$ 23.5 |
+| r_mag $\leq$ 24 |
+| i_mag $\leq$ 24 |
+| z_mag $\leq$ 24 |
 | $M_2$ $\geq$ 0.05 |
 ```
-The shear-dependent biases caused by the selection is estimated and corrected
+The shear-dependent bias caused by the selection is estimated and corrected
 using the shear response of Gaussian flux and trace radius.
 
-### Match to DM catalog
+### Removing Red Sequence Galaxies
 
-```{figure} _static/magdiff.png
-:name: magdiff
-Magnitude difference between DM (CModel) and AnaCal. Galaxies are, on average,
-0.05 magnitudes fainter in AnaCal compared to DM measurements.
+Since cluster member galaxies are physically associated with the lensing
+structure, they do not exhibit a shear signal. To avoid diluting the measured
+lensing signal, such galaxies must be identified and removed from the source
+sample. We follow {cite}`SITCOMTN-163` to identify them through visual
+inspection of color–magnitude diagrams constructed in three different bands.
+
+To identify the red sequence galaxies, we first limit our analysis to galaxies
+detected within 0.1° (≈1.3 Mpc) of the BCG. The resulting color-magnitude
+diagrams are presented in {numref}`rs_selection`. Due to fewer observations in
+*z* we focus on the _gri_ bands and the colors (*g-r*, *r-i*, *g-i*) from this
+set. We use AnaCal fluxes for the selection.
+
+
+```{figure} _static/rs_selection.png
+:name: rs_selection
+Color–magnitude diagrams of galaxies near the BCG, plotted with the AnaCal
+r-band magnitude on the x-axis and AnaCal colors on the y-axis. From left to
+right, we show *g-i*, *r-i*, and *g-r* colors, with the red-sequence overdensity
+clearly visible.
 ```
+We identify the red sequence in each color by eye, applying magnitude cuts of
+$17 < r < 23.5$ as illustrated in {numref}`rs_selection`. Any object classified
+as belonging to all three red sequences is excluded from the shear catalog used
+in the cluster lensing analysis.
 
-To exclude member galaxies of Abell 360, we apply the same color and
-photometric redshift cuts as described in {cite}`SITCOMTN-163`, following a
-cross-match between the AnaCal detections and the DM catalog. For each AnaCal
-detection, we identify the nearest DM galaxy and retain matches with
-separations less than $1.5$ arcseconds. {numref}`magdiff` shows the histogram of
-the magnitude differences between the CModel flux from the DM pipeline and the
-Gaussian flux from AnaCal. On average, galaxies appear approximately $0.05$
-magnitudes fainter in the AnaCal catalog, due to the Gaussian flux measurement
-capturing less of the total light compared to CModel.
 
 ### Shear Profile
 
@@ -184,10 +197,12 @@ Both measured profiles have 68% confidence intervals.
 The theoretical shear profile is generated using the Cluster Lensing Mass
 Modeling (CLMM) code {cite:p}`clmm`. This model serves as a rough reference and
 is not fitted to the calibrated shear measurements. It assumes a
-Navarro-Frenk-White (NFW) halo with a cluster mass of $M_{500c} = 4 \times
-10^{14}, M_\odot$ {cite:p}`a360_mass` and a concentration parameter of 4.. The
-source redshift distribution is adopted from the LSST Dark Energy Science
-Collaboration’s Science Requirements Document (SRD) {cite:p}`desc_srd`.
+Navarro-Frenk-White (NFW) halo with a cluster mass of $M_{500c} = 6 \times
+10^{14}, M_\odot$ {cite:p}`a360_mass` and a concentration parameter of 4. We
+wrongly assume the Y10 source redshift distribution from the LSST Dark Energy
+Science Collaboration’s Science Requirements Document (SRD) {cite:p}`desc_srd`.
+
+# Conclusion
 
 # References
 
