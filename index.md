@@ -1,21 +1,22 @@
 # AnaCal Shear Profile of Abell 360 in LSSTComCam Data Preview 1
 
 ```{abstract}
-This technote presents the measurement of the shear profile for the Abell 360
-galaxy cluster using ComCam data processed with the AnaCal pipeline. We detail
-the procedures involved in bright star masking, source selection, and the
-estimation of tangential and cross shear around the cluster center. The
-resulting shear profiles provide key insights into the mass distribution of
-Abell 360 and demonstrate the capabilities of AnaCal in processing early LSST
-data.
+This technote presents the measurement of the weak-lensing shear profile for
+the Abell 360 galaxy cluster using LSSTComCam data processed with the AnaCal
+pipeline. We detail the procedures involved in bright-star masking, source
+selection, and the estimation of tangential and cross shear around the cluster
+center. The resulting shear profiles provide key insights into the mass
+distribution of Abell 360 and demonstrate the capabilities of AnaCal in
+processing early LSST data, with the tangential shear profile detected at
+$5\sigma$ significance.
 ```
 
 ## Introduction
-The Rubin ComCam observing campaign conducted at the end of 2024 targeted seven
-fields, including the low ecliptic latitude Rubin SV 38 7 field. This field
-hosts the Abell 360 galaxy cluster, an intermediate-mass cluster at redshift
-$z = 0.22$, which we use as a commissioning case study to demonstrate Rubin’s
-capabilities for weak lensing analyses of galaxy clusters.
+The Rubin LSSTComCam observing campaign conducted at the end of 2024 targeted
+seven fields, including the low ecliptic latitude Rubin SV 38 7 field. This
+field hosts the Abell 360 galaxy cluster, an intermediate-mass cluster at
+redshift $z = 0.22$, which we use as a commissioning case study to demonstrate
+Rubin’s capabilities for weak lensing analyses of galaxy clusters.
 
 This technote is one part of a series studying Abell 360 in order to both
 stress test the commissioning camera and demonstrate the technical capabilities
@@ -36,7 +37,7 @@ approach to characterizing how weak gravitational lensing affects measurements
 from astronomical images. Instead of relying on numerical shearing or image
 simulations, the method starts from first principles by analytically computing
 how each pixel value in an image responds to an applied shear after
-deconvolution and reconvolution with a Gaussian smoothing kernel
+PSF deconvolution and reconvolution with a Gaussian smoothing kernel
 {cite:p}`Anacal_Li2023`. This pixel-level shear response captures the fundamental
 transformation properties of the image under lensing distortions.
 
@@ -56,9 +57,9 @@ field---drawn from the same image noise distribution as the original image but
 rotated by 90 degrees. This rotation symmetrizes the noise contribution under
 shear distortion and allows the authors to analytically derive the correction
 term for noise bias in the shear response {cite:p}`Anacal_Li2025`. The resulting
-correction is not only accurate but avoids the need for calibration of noise
-bias with external simulations, maintaining the fully analytical nature of the
-shear response pipeline.
+correction is not only accurate but also avoids the need for calibration of
+noise bias with external simulations, maintaining the fully analytical nature
+of the shear response pipeline.
 
 
 ### Bright Star Mask
@@ -202,7 +203,23 @@ Navarro-Frenk-White (NFW) halo with a cluster mass of $M_{500c} = 6 \times
 wrongly assume the Y10 source redshift distribution from the LSST Dark Energy
 Science Collaboration’s Science Requirements Document (SRD) {cite:p}`desc_srd`.
 
+
+Because of the limited galaxy sample, the weak-lensing measurements around
+individual clusters are inherently noisy, as evident in the figure. Even so,
+the cross-shear signal (orange) fluctuates around zero across the full redshift
+range, while the tangential shear shows a clear positive trend that grows
+toward the cluster center. A statistical test confirms this: the tangential
+shear is detected at $5.06\sigma$ significance ($p = 2.5 \times 10^{-4}$),
+whereas the cross shear is consistent with zero ($p = 0.30$).
+
+
 # Conclusion
+
+In the low-ecliptic-latitude field of the Rubin 2024 LSSTComCam campaign, we
+ran the AnaCal shear estimator on coadded images. To avoid contamination from
+cluster member galaxies, red-sequence galaxies were identified and removed
+based on AnaCal magnitudes in the $griz$ bands. This allowed us to measure the
+shear profile around A360, yielding a detection at $5\sigma$ significance.
 
 # References
 
