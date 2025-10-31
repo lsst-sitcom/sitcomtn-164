@@ -11,6 +11,8 @@ processing early LSST data, with the tangential shear profile detected at
 $5\sigma$ significance.
 ```
 
+DOI: [10.71929/rubin/3000577](https://doi.org/10.71929/rubin/3000577)
+
 ## Introduction
 The Rubin LSSTComCam observing campaign conducted at the end of 2024 targeted
 seven fields, including the low ecliptic latitude Rubin SV 38 7 field. This
