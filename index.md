@@ -27,9 +27,8 @@ impact it can have on cluster WL in {cite:t}`SITCOMTN-161`, implementation of
 cell-based coadds and subsequent use for Metadetect {cite:p}`metaDet_LSST2023`
 in {cite:t}`SITCOMTN-162`, source selection of weak lensing galaxies in
 {cite}`SITCOMTN-163`,  photometric calibration in _insert here_, use of Anacal
-{cite:p}`Anacal_Li2025` to produce a cluster shear profile in
-{cite:t}`SITCOMTN-164`, and background subtraction in this field and Fornax in
-_insert here_.
+{cite:p}`Anacal_Li2025` to produce a cluster shear profile here, and background
+subtraction in this field and Fornax in _insert here_.
 
 ## AnaCal Shear Estimation
 
@@ -172,7 +171,7 @@ set. We use AnaCal fluxes for the selection.
 
 ```{figure} _static/rs_selection.png
 :name: rs_selection
-Color–magnitude diagrams of galaxies near the BCG, plotted with the AnaCal
+Color-magnitude diagrams of galaxies near the BCG, plotted with the AnaCal
 r-band magnitude on the x-axis and AnaCal colors on the y-axis. From left to
 right, we show *g-i*, *r-i*, and *g-r* colors, with the red-sequence overdensity
 clearly visible.
